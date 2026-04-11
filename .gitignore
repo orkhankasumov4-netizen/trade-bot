@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+trades.csv
+errors.log
+*.log
+.venv/
+venv/
