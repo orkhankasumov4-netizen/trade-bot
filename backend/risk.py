@@ -11,7 +11,7 @@ from __future__ import annotations
 import logging
 from typing import List
 
-from trading_bot.config import (
+from backend.config import (
     BOOTSTRAP_WIN_RATE,
     BOOTSTRAP_REWARD_RISK,
     MAX_POSITION_FRACTION,

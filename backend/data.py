@@ -15,7 +15,7 @@ from typing import Dict
 import ccxt
 import pandas as pd
 
-from trading_bot.config import (
+from backend.config import (
     SYMBOL,
     TIMEFRAMES,
     CANDLE_LIMIT,

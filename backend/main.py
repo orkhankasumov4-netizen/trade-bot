@@ -29,24 +29,24 @@ import logging
 import schedule
 
 # ── Project imports ──────────────────────────────────────────────────────────
-from trading_bot.logger import setup_logging, print_dashboard, log_trade
-from trading_bot.config import (
+from backend.logger import setup_logging, print_dashboard, log_trade
+from backend.config import (
     build_exchange,
     verify_connection,
     get_mode,
     REFRESH_INTERVAL_MIN,
     SYMBOL,
 )
-from trading_bot.data import refresh_all, get_candles, MIN_CANDLES
-from trading_bot.indicators import compute_all
-from trading_bot.strategy import (
+from backend.data import refresh_all, get_candles, MIN_CANDLES
+from backend.indicators import compute_all
+from backend.strategy import (
     generate_signal,
     detect_regime,
     overall_regime,
     calc_stop_loss,
     calc_take_profit,
 )
-from trading_bot.risk import (
+from backend.risk import (
     position_size_usdt,
     check_safety,
     record_trade,
@@ -61,7 +61,7 @@ from trading_bot.risk import (
     get_daily_pnl,
     get_daily_limit,
 )
-from trading_bot.executor import (
+from backend.executor import (
     init as executor_init,
     open_position,
     close_position,

@@ -18,7 +18,7 @@ from typing import Dict, Optional
 import numpy as np
 import pandas as pd
 
-from trading_bot.config import SYMBOL
+from backend.config import SYMBOL
 
 log = logging.getLogger("bot.logger")
 

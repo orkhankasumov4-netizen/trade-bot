@@ -17,7 +17,7 @@ from typing import Optional
 
 import ccxt
 
-from trading_bot.config import SYMBOL, get_mode
+from backend.config import SYMBOL, get_mode
 
 log = logging.getLogger("bot.executor")
 
